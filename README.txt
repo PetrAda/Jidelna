@@ -1,0 +1,1 @@
+Prototip webu obsahuje staženou stránku z jidelna.cz a ukazuje, jak bych si asi představoval, aby fungoval výsledek

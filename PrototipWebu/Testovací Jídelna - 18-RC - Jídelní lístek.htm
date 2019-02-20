@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html class=" js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="description" content="Jídelní lístky škol a školek s možností odhlášky a výběru.">
+	<meta name="keywords" content="Lístek, Jídelna, Školní, Závodní, Jídelníček, Jídelní lístek, Základní škola, ZŠ, Mateřská škola, MŠ, Střední škola, SŠ, Přihláška, Odhláška, Objednávka, Strava, jidelna.cz">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Testovací Jídelna - 18-RC - Jídelní lístek</title>
+	<link rel="shortcut icon" href="http://localhost:8080/favicon.ico">
+		<link href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/bootstrap.css" rel="stylesheet">
+	<link href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/style-blue.css" rel="stylesheet">
+	<link href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/width-boxed.css" rel="stylesheet">
+	<link href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/cookie-control.css" rel="stylesheet">
+	<link href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/base.css" rel="stylesheet">
+	
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Při poskytování služeb nám pomáhají soubory cookie. Používáním našich služeb vyjadřujete souhlas s naším používáním souborů cookie.","dismiss":"OK, rozumím","learnMore":"Podrobnosti","link":null,"theme":"light-top"};
+    </script>
+
+    <script type="text/javascript" src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/cookieconsent.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+<link rel="stylesheet" type="text/css" href="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/light-top.xml"></head>
+
+<body data-basepath="" class="loggedIn">
+	<script> document.documentElement.className+=' js' </script>
+<div id="sb-site">
+	<div id="whole" class="boxed">
+		<div class="reklamyBoxLevy">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+			</div>
+		</div>
+		<div class="reklamyBoxLevy">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+			</div>
+		</div>
+		<div id="header" class="header-full container-fluid">
+            <div class="row">
+			<div class="col-xs-7">
+				<div class="row">
+					<div id="hlavniHeader" class="col-xs-7 header-full-title">
+						<h1><a href="http://localhost:8080/?jidelna=44447">Jídelní lístek</a> <span class="ajaxSpinner" style="display: none;"><i class="fa fa-gear fa-spin"></i></span></h1>
+					</div>
+					<div class="col-xs-5">
+						<p>Poslední synchronizace:
+                            <em>Pátek&nbsp;21.12.2018&nbsp;14:42</em></p>
+					</div>
+				</div>
+				<div id="headerJidelny" class="row header-full-title">
+                    <p>Testovací Jídelna - 18-RC</p>
+				</div>
+			</div>
+			<div class="col-xs-5">
+<div id="snippet-login-">        <div id="prihlaseniBox" class="prihlasen well well-sm container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+                    <div class="nastrojeBox pull-right">
+                        <form action="/jidelni-listek/?zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447" method="post" id="frm-login-odhlasit" novalidate="">
+                            <input class="btn btn-link" name="_submit" value="Odhlásit se" type="submit">
+                        <input name="do" value="login-odhlasit-submit" type="hidden"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
+                        <a href="http://localhost:8080/ucet/?jidelna=44447" class="btn btn-link"><strong>Správa účtu</strong></a>
+                    </div>
+						<dl class="">
+							<dt>Přihlášen:</dt>
+							<dd>Ijáček I.A.</dd>
+							<dt>Jídelna:</dt>
+							<dd>
+								Testovací Jídelna - 18-RC
+							</dd>
+						</dl>
+				</div>
+			</div>
+        </div>
+</div>			</div>
+            </div>
+		</div>
+		<div id="hlavniNavigace" class="navbar navbar-static-top navbar-default navbar-header-full navbar-dark">
+			<ul class="nav navbar-nav">
+				<li><a href="http://localhost:8080/?jidelna=44447">Vybrat jídelnu</a></li>
+				<li class="active"><a href="http://localhost:8080/jidelni-listek/?jidelna=44447">Jídelní lístek</a></li>
+				<li><a href="http://localhost:8080/historie/?jidelna=44447">Historie</a></li>
+				<li><a href="http://localhost:8080/kontakty/?jidelna=44447">Kontakty a informace</a></li>
+				<li><a href="http://localhost:8080/spotrebni-kos/?jidelna=44447">Spotřební koš</a></li>
+				<li><a href="http://localhost:8080/napoveda/?jidelna=44447">Nápověda</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="flashes" id="snippet--flashes">
+			</div>
+			<div class="page-body">
+            <main class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="text-center">
+
+<div class="spinnerVyber">
+	<ul class="pagination">
+		<li><a href="http://localhost:8080/jidelni-listek/?zacatek=2018-12&amp;delka=P1M&amp;jidelna=44447"><i class="fa fa-chevron-left"></i></a></li>
+		<li><a href="http://localhost:8080/jidelni-listek/?zacatek=2018-11&amp;delka=P1M&amp;jidelna=44447">Listopad 2018</a></li>
+		<li><a href="http://localhost:8080/jidelni-listek/?zacatek=2018-12&amp;delka=P1M&amp;jidelna=44447">Prosinec 2018</a></li>
+		<li class="active"><a>Leden 2019</a></li>
+	</ul>
+</div>						</div>
+					</div>
+				</div>
+				<div class="row">
+<div class="jidelniListek">
+	<div>
+            <div class="oddelovacTydnu">
+                Týden 01
+            </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Úterý 1. 1. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=44447">
+                        Ijáček I.A.
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Přesnídávka
+			
+        </div>
+        <div class="menu row"> 
+		
+            <div class="nazevJidla col-xs-1">Přesnídávka</div>
+			
+    <div class="menuJidla col-xs-9">
+	
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">1
+				<div class="hodnoceni"></div>
+			</div>
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo 
+            </div>
+            <div class="col-xs-7 textJidla">
+                Vánoční prádzniny
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">2</div>
+    <div class="menuJidla col-xs-9">
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Svačina
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">Svačina</div>
+    <div class="menuJidla col-xs-9">
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-3">Středa 2. 1. 2019</div>
+            <div class="col-xs-5 alergeny">Obsahuje alergeny</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=44447">
+                        Ijáček I.A.
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Přesnídávka
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+			Přesnídávka
+			<div class="hodnoceni row"> <img src="A_smile.png" alt="Test" /> </div>
+			</div>
+			
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                jogurt s ovocem
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219282&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                voda
+                    </a>
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content=" Nápoj:&nbsp;250&nbsp;ml " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>250&nbsp;g</div></a>
+							
+
+                    </div>
+						<div class="ohodnot row">
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="A_smile.png" alt="Test" />
+								</div>
+								<div class="col-xs-3" >
+									<img class="HodnoticiSmajlik" src="B_smile.png" alt="Test"/>
+								</div>
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="C_smile.png" alt="Test" />
+								</div>
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="D_smile.png" alt="Test" />
+								</div>
+						</div>
+					
+            </div>
+        </div>
+
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">1
+				<div class="hodnoceni row">
+					<img  src="A_smile.png" alt="Test" class="PrumerneHodnoceni" />
+					<div class="CelkoveHodnoceni" 
+					style="display:none;
+						position:absolute;
+						border:1px solid #000;">
+						
+						some text here</div>
+				</div>
+			</div>
+
+			
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219269&amp;alergeny=%5B%221%22%2C%223%22%2C%229%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Polévka z vaječné jíšky
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=1&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Obiloviny obsahující lepek">1</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=3&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Vejce a výrobky z nich">3</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=9&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Celer a výrobky z něj">9</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219261&amp;alergeny=%5B%224%22%2C%227%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Zapečená ryba se sýrem
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=4&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Ryby a výrobky z nich">4</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=7&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Mléko a výrobky z něj (včetně laktózy)">7</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219256&amp;alergeny=%5B%227%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                opečené brambory
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=7&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Mléko a výrobky z něj (včetně laktózy)">7</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219276&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Okurkový salát
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219282&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                voda
+                    </a>
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;120&nbsp;ml Jídlo:&nbsp;80&nbsp;g Příloha:&nbsp;150&nbsp;g Doplněk:&nbsp;100&nbsp;g Nápoj:&nbsp;250&nbsp;ml " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>700&nbsp;g</div></a>
+
+                    </div>
+					<div class="ohodnot row">
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="A_smile.png" alt="hodnoceni_1" />
+								</div>
+								<div class="col-xs-3" >
+									<img class="PouzityHodnoticiSmajlik" src="B_smile.png" alt="hodnoceni_2" />
+								</div>
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="C_smile.png" alt="hodnoceni_3" />
+								</div>
+								<div class="col-xs-3">
+									<img class="HodnoticiSmajlik" src="D_smile.png" alt="hodnoceni_4" />
+								</div>
+							</div>
+        </div>
+            </div>							
+
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">2
+			<div class="hodnoceni row"><img src="A_smile.png" alt="Test" /></div>
+			</div>
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219269&amp;alergeny=%5B%221%22%2C%223%22%2C%229%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Polévka z vaječné jíšky
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=1&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Obiloviny obsahující lepek">1</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=3&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Vejce a výrobky z nich">3</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=9&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Celer a výrobky z něj">9</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219261&amp;alergeny=%5B%224%22%2C%227%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Zapečená ryba se sýrem
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=4&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Ryby a výrobky z nich">4</a>, 
+                <a href="http://localhost:8080/jidelni-listek/?alergen=7&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Mléko a výrobky z něj (včetně laktózy)">7</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219256&amp;alergeny=%5B%227%22%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                opečené brambory
+                    </a>
+            </div>
+            <div class="col-xs-2 alergeny">
+                <a href="http://localhost:8080/jidelni-listek/?alergen=7&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=alergeny" data-tooltip="tooltip" title="" data-container="body" class="modalLink" data-original-title="Mléko a výrobky z něj (včetně laktózy)">7</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219276&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                Okurkový salát
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219282&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                voda
+                    </a>
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;120&nbsp;ml Jídlo:&nbsp;80&nbsp;g Příloha:&nbsp;150&nbsp;g Doplněk:&nbsp;100&nbsp;g Nápoj:&nbsp;250&nbsp;ml " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>700&nbsp;g</div></a>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Svačina
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">Svačina
+			
+			</div>
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                jogurt s ovocem
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/jidelni-listek/?recepturaid=219282&amp;alergeny=%5B%5D&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=receptura">
+                voda
+                    </a>
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+                                <img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+                        </a>
+                        <div class="badge"></div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content=" Nápoj:&nbsp;250&nbsp;ml " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>250&nbsp;g</div></a>		
+                    </div>	
+            </div>
+
+        </div>
+
+    </div>
+        </div>
+    </div>
+    
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+					<h3>Souhrn:</h3>
+<div class="souctyObjednavek">
+		<table class="table">
+			<thead>
+				<tr><th>Jméno strávníka</th>
+					<th>
+						Vyzvednuto
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+							<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloVyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto.">
+								<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloVyzvednutoZolik.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto na žolík.">
+						</a>
+					</th>
+					<th>
+						Nevyzvednuto
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+							<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNevyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo nebylo vyzvednuto.">
+						</a>
+					</th>
+					<th>
+						Odhlášeno
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+							<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloOdhlaseno.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo odhlášeno.">
+								<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloGeneralniOdhlaska.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo odhlášeno hromadně jídelnou.">
+						</a>
+					</th>
+					<th>
+						Data nebyla zaslána
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=44447" data-iajs-napoveda-href="/jidelni-listek/?kontext=StavyOdberuNove&amp;zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447&amp;do=napoveda" class="napovedaLink">
+							<img src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+						</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+			<tfoot>
+			</tfoot>
+		</table>
+	</div>			</div>
+		</div>
+	</div>
+</div>                </div>
+
+				<div class="row">
+                    <div class="col-xs-12">
+                        <h3>Přehled zveřejněných jídelníčků:</h3>
+                        <div class="centeredContent">
+<table class="vyberMesice table table-striped table-condensed">
+	<tbody><tr>
+		<th>2018:</th>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			<a href="http://localhost:8080/jidelni-listek/?zacatek=2018-11&amp;delka=P1M&amp;jidelna=44447">XI</a>
+		</td>
+		<td>
+			<a href="http://localhost:8080/jidelni-listek/?zacatek=2018-12&amp;delka=P1M&amp;jidelna=44447">XII</a>
+		</td>
+	</tr>
+	<tr>
+		<th>2019:</th>
+		<td>
+			<a href="http://localhost:8080/jidelni-listek/?zacatek=2019-01&amp;delka=P1M&amp;jidelna=44447">I</a>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+</tbody></table>                        </div>
+                    </div>
+				</div>
+            </main>
+<div class="modal fade plovouciOkno" id="snippet-receptura-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-receptura-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --><div class="modal fade plovouciOkno" id="snippet-alergeny-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-alergeny-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->			</div>
+		</div>
+		<div id="pripravenoProgramem" class="text-center">
+			<p>
+					Připraveno programem "Jídelna" verze 18.10.02-SNAPSHOT.
+			</p>
+			<p>Veškeré publikované lístky a další informace jsou vlastnictvím příslušné jídelny nebo svých tvůrců.</p>
+		</div>
+		<p class="text-center"><a href="http://localhost:8080/zasady_ochrany_soukromi.pdf">Zásady ochrany osobních údajů</a></p>
+		<div id="footer">
+			<p>Objednávkový systém <a href="http://localhost:8080/">www.jidelna.cz</a> provozuje firma <a href="http://www.barda.cz/">Barda SW, HW, s.r.o.</a> ©2014</p>
+		</div>
+	</div>
+</div>	
+<div class="modal fade plovouciOkno" id="snippet-napoveda-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-napoveda-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->		<div class="modal fade plovouciOkno" data-iajs-zobrazit="1" data-iajs-zarizeni="581" id="snippet-plovouciOkno-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-plovouciOkno-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Zpráva pro strávníky od jídelny.
+</h4>
+      </div>
+      <div class="modal-body">
+			<p>Klasický strávník (ZŠ - pouze obědy) - 4444400002<br>
+Klasický strávník (MŠ - 3 časy jídla) - 4444403304<br>
+Hromadný strávník (pouze obědy) - 4444403327<br>
+<br>
+Heslo je vždy 123456.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+	
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/hlavni.js"></script>
+		<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/jquery-1.js"></script>
+		<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/bootstrap.js"></script>
+		<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/placeholders.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/respond.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/jquery.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/netteForms.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/hlavni.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/zpravaJidelny.js"></script>
+	<script src="Testovac%C3%AD%20J%C3%ADdelna%20-%2018-RC%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/Hodnoceni.js"></script>
+
+</div></body></html>
+<!-- Tracy Debug Bar -->
