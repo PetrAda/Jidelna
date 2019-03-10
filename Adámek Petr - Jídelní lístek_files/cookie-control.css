@@ -1,0 +1,57 @@
+/* ---------------------------------------------------- */
+/* Variables */
+/* ---------------------------------------------------- */
+/* Social Colors */
+/* Contexts colors */
+.cc_btn.cc_btn_accept_all {
+  color: #ffffff !important;
+  background-color: #0099da !important;
+  border-color: #0087c1 !important;
+}
+.cc_btn.cc_btn_accept_all:hover,
+.cc_btn.cc_btn_accept_all:focus,
+.cc_btn.cc_btn_accept_all.focus,
+.cc_btn.cc_btn_accept_all:active,
+.cc_btn.cc_btn_accept_all.active,
+.open > .dropdown-toggle.cc_btn.cc_btn_accept_all {
+  color: #ffffff !important;
+  background-color: #0075a7 !important;
+  border-color: #005c83 !important;
+}
+.cc_btn.cc_btn_accept_all:active,
+.cc_btn.cc_btn_accept_all.active,
+.open > .dropdown-toggle.cc_btn.cc_btn_accept_all {
+  background-image: none !important;
+}
+.cc_btn.cc_btn_accept_all.disabled,
+.cc_btn.cc_btn_accept_all[disabled],
+fieldset[disabled] .cc_btn.cc_btn_accept_all,
+.cc_btn.cc_btn_accept_all.disabled:hover,
+.cc_btn.cc_btn_accept_all[disabled]:hover,
+fieldset[disabled] .cc_btn.cc_btn_accept_all:hover,
+.cc_btn.cc_btn_accept_all.disabled:focus,
+.cc_btn.cc_btn_accept_all[disabled]:focus,
+fieldset[disabled] .cc_btn.cc_btn_accept_all:focus,
+.cc_btn.cc_btn_accept_all.disabled.focus,
+.cc_btn.cc_btn_accept_all[disabled].focus,
+fieldset[disabled] .cc_btn.cc_btn_accept_all.focus,
+.cc_btn.cc_btn_accept_all.disabled:active,
+.cc_btn.cc_btn_accept_all[disabled]:active,
+fieldset[disabled] .cc_btn.cc_btn_accept_all:active,
+.cc_btn.cc_btn_accept_all.disabled.active,
+.cc_btn.cc_btn_accept_all[disabled].active,
+fieldset[disabled] .cc_btn.cc_btn_accept_all.active {
+  background-color: #0099da !important;
+  border-color: #0087c1 !important;
+}
+.cc_btn.cc_btn_accept_all .badge {
+  color: #0099da !important;
+  background-color: #ffffff !important;
+}
+.cc_container {
+  color: inherit !important;
+  font-family: inherit !important;
+}
+.cc_logo {
+  display: none;
+}

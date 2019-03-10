@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html class=" js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="description" content="Jídelní lístky škol a školek s možností odhlášky a výběru.">
+	<meta name="keywords" content="Lístek, Jídelna, Školní, Závodní, Jídelníček, Jídelní lístek, Základní škola, ZŠ, Mateřská škola, MŠ, Střední škola, SŠ, Přihláška, Odhláška, Objednávka, Strava, jidelna.cz">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Adámek Petr - Odběry</title>
+	<link rel="shortcut icon" href="http://localhost:8080/favicon.ico">
+		<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/bootstrap.css" rel="stylesheet">
+		<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/font-awesome.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/style-blue.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/width-boxed.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/cookie-control.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/base.css" rel="stylesheet">
+	
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Při poskytování služeb nám pomáhají soubory cookie. Používáním našich služeb vyjadřujete souhlas s naším používáním souborů cookie.","dismiss":"OK, rozumím","learnMore":"Podrobnosti","link":null,"theme":"light-top"};
+    </script>
+
+    <script type="text/javascript" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/cookieconsent.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+<link rel="stylesheet" type="text/css" href="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/light-top.xml"></head>
+
+<body data-basepath="" class="loggedIn">
+	<script> document.documentElement.className+=' js' </script>
+<div id="sb-site">
+	<div id="whole" class="boxed">
+		<div class="reklamyBox">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+				Placeholder reklamy
+			</div>
+			<script async="" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/adsbygoogle.js"></script>
+			<!-- Pravy bocni panel -->
+			<script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="reklamyBoxLevy">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+				Placeholder reklamy
+			</div>
+			<script async="" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/adsbygoogle.js"></script>
+			<!-- Levy bocni panel -->
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div id="header" class="header-full container-fluid">
+            <div class="row">
+			<div class="col-xs-7">
+				<div class="row">
+					<div id="hlavniHeader" class="col-xs-7 header-full-title">
+						<h1><a href="http://localhost:8080/?jidelna=99985">Odběry</a> <span class="ajaxSpinner" style="display: none;"><i class="fa fa-gear fa-spin"></i></span></h1>
+					</div>
+					<div class="col-xs-5">
+						<p>Poslední synchronizace:
+                            <em>Čtvrtek&nbsp;7.3.2019&nbsp;23:15</em></p>
+						<p>Uzavírka objednávek: 
+							<em>7:00
+                                </em></p>
+					</div>
+				</div>
+				<div id="headerJidelny" class="row header-full-title">
+                    <p>Adámek Petr</p>
+				</div>
+			</div>
+			<div class="col-xs-5">
+<div id="snippet-login-">        <div id="prihlaseniBox" class="prihlasen well well-sm container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+                    <div class="nastrojeBox pull-right">
+                        <form action="/historie/?jidelna=99985" method="post" id="frm-login-odhlasit" novalidate="">
+                            <input class="btn btn-link" name="_submit" value="Odhlásit se" type="submit">
+                        <input name="do" value="login-odhlasit-submit" type="hidden"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
+                        <a href="http://localhost:8080/ucet/?jidelna=99985" class="btn btn-link"><strong>Správa účtu</strong></a>
+                    </div>
+						<dl class="">
+							<dt>Přihlášen:</dt>
+							<dd>Milasek Muj</dd>
+							<dt>Jídelna:</dt>
+							<dd>
+								Adámek Petr
+							</dd>
+						</dl>
+				</div>
+			</div>
+        </div>
+</div>			</div>
+            </div>
+		</div>
+		<div id="hlavniNavigace" class="navbar navbar-static-top navbar-default navbar-header-full navbar-dark">
+			<ul class="nav navbar-nav">
+				<li><a href="http://localhost:8080/?jidelna=99985">Vybrat jídelnu</a></li>
+				<li><a href="http://localhost:8080/jidelni-listek/?jidelna=99985">Jídelní lístek</a></li>
+				<li class="active"><a href="http://localhost:8080/historie/?jidelna=99985">Historie</a></li>
+				<li><a href="http://localhost:8080/kontakty/?jidelna=99985">Kontakty a informace</a></li>
+				<li><a href="http://localhost:8080/spotrebni-kos/?jidelna=99985">Spotřební koš</a></li>
+				<li><a href="http://localhost:8080/napoveda/?jidelna=99985">Nápověda</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="flashes" id="snippet--flashes">
+			</div>
+			<div class="page-body">
+            <main class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="text-center">
+
+<div class="spinnerVyber">
+	<ul class="pagination">
+		<li class="active"><a>Březen 2019</a></li>
+	</ul>
+</div>						</div>
+					</div>
+				</div>
+				<div class="row">
+<div class="jidelniListek">
+	<div>
+            <div class="oddelovacTydnu">
+                Týden 10
+            </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Úterý 5. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařilo se získat hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNevime.png" data-tooltip="tooltip" title="" data-original-title="Jídelna nezasílá data o vyzvednutí.">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařilo se získat hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednutoZolik.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto na žolík.">
+                        </a>
+
+                    </div>
+                <div data-objednavka="155449443" data-stravnik="9998500001" data-ajax-hodnoceni="/jidelni-listek/Ohodnot" class="ohodnot row">
+                         
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="1" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/D_smile.png" alt="hodnoceni_1">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="2" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/C_smile.png" alt="hodnoceni_2">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="3" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="hodnoceni_3">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="4" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/A_smile.png" alt="hodnoceni_4">
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Středa 6. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Que?
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                passo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                ist
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                es
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                doung
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto.">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+                <div data-objednavka="155449426" data-stravnik="9998500001" data-ajax-hodnoceni="/jidelni-listek/Ohodnot" class="ohodnot row">
+                         
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="1" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/D_smile.png" alt="hodnoceni_1">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="2" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/C_smile.png" alt="hodnoceni_2">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="3" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="hodnoceni_3">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="4" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/A_smile.png" alt="hodnoceni_4">
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařilo se získat hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Que?
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                passo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                ist
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                es
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                doung
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto.">
+                        </a>
+
+                    </div>
+                <div data-objednavka="155449444" data-stravnik="9998500001" data-ajax-hodnoceni="/jidelni-listek/Ohodnot" class="ohodnot row">
+                         
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="1" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/D_smile.png" alt="hodnoceni_1">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="2" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/C_smile.png" alt="hodnoceni_2">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="3" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="hodnoceni_3">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="4" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/A_smile.png" alt="hodnoceni_4">
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Čtvrtek 7. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto.">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+                <div data-objednavka="155449423" data-stravnik="9998500001" data-ajax-hodnoceni="/jidelni-listek/Ohodnot" class="ohodnot row">
+                         
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="1" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/D_smile.png" alt="hodnoceni_1">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="2" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/C_smile.png" alt="hodnoceni_2">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="3" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="hodnoceni_3">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="4" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/A_smile.png" alt="hodnoceni_4">
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařilo se získat hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařilo se získat hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNevime.png" data-tooltip="tooltip" title="" data-original-title="Jídelna nezasílá data o vyzvednutí.">
+                        </a>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Pátek 8. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni" style="display: none;">Aritmetický průměr získán z 1 hlasů. Přesný výsledek je 3</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloGeneralniOdhlaska.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo odhlášeno hromadně jídelnou.">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni" style="display: none;">Aritmetický průměr získán z 1 hlasů. Přesný výsledek je 3</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219283&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                noková
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                <a class="modalLink" href="http://localhost:8080/historie/?recepturaid=219284&amp;alergeny=%5B%5D&amp;jidelna=99985&amp;do=receptura">
+                ŘízEk
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Bramborová kaše
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                        </a>
+                        <div class="badge">10,00&nbsp;Kč</div>
+                        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Polévka:&nbsp;500&nbsp;g Jídlo:&nbsp;50&nbsp;g    " data-original-title="" title="">
+                            <div class="inline-block"><i class="fa fa-balance-scale"></i>550&nbsp;g</div></a>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                voda
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                        <a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+                                <img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNevime.png" data-tooltip="tooltip" title="" data-original-title="Jídelna nezasílá data o vyzvednutí.">
+                        </a>
+
+                    </div>
+                <div data-objednavka="155449445" data-stravnik="9998500001" data-ajax-hodnoceni="/jidelni-listek/Ohodnot" class="ohodnot row">
+                         
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="1" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/D_smile.png" alt="hodnoceni_1">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="2" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/C_smile.png" alt="hodnoceni_2">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="3" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/B_smile.png" alt="hodnoceni_3">
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img data-hodnoceni="4" class="HodnoticiSmajlik" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/A_smile.png" alt="hodnoceni_4">
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+					<h3>Souhrn:</h3>
+<div class="souctyObjednavek">
+		<table class="table">
+			<thead>
+				<tr><th>Jméno strávníka</th>
+					<th>
+						Vyzvednuto
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+							<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto.">
+								<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloVyzvednutoZolik.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo vyzvednuto na žolík.">
+								<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNevime.png" data-tooltip="tooltip" title="" data-original-title="Jídelna nezasílá data o vyzvednutí.">
+						</a>
+					</th>
+					<th>
+						Nevyzvednuto
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+							<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNevyzvednuto.png" data-tooltip="tooltip" title="" data-original-title="Jídlo nebylo vyzvednuto.">
+						</a>
+					</th>
+					<th>
+						Odhlášeno
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+							<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloOdhlaseno.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo odhlášeno.">
+								<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloGeneralniOdhlaska.png" data-tooltip="tooltip" title="" data-original-title="Jídlo bylo odhlášeno hromadně jídelnou.">
+						</a>
+					</th>
+					<th>
+						Data nebyla zaslána
+						<a href="http://localhost:8080/napoveda/?kontext=StavyOdberuNove&amp;jidelna=99985" data-iajs-napoveda-href="/historie/?kontext=StavyOdberuNove&amp;jidelna=99985&amp;do=napoveda" class="napovedaLink">
+							<img src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/JidloNeznamyStav.png" data-tooltip="tooltip" title="" data-original-title="Data nebyla jídelnou zaslána.">
+						</a>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Milasek Muj</td>
+					<td>
+						7
+							<div class="badge">
+							30,00 Kč
+							</div>
+					</td>
+					<td>
+						0
+							<div class="badge">
+							0,00 Kč
+							</div>
+					</td>
+					<td>
+						1
+							<div class="badge">
+							0 Kč
+							</div>
+					</td>
+					<td>
+						0
+							<div class="badge">
+							0 Kč
+							</div>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+			</tfoot>
+		</table>
+	</div>			</div>
+		</div>
+	</div>
+</div>                </div>
+				<div class="row">
+					<div class="reklamyBanner">
+						<div class="placeholderReklamy" style="width:970px;height:90px;">
+							Placeholder reklamy
+						</div>
+						<script async="" src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/adsbygoogle.js"></script>
+						<!-- Pod strankou -->
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-xs-12">
+                        <h3>Přehled zveřejněných jídelníčků:</h3>
+                        <div class="centeredContent">
+<table class="vyberMesice table table-striped table-condensed">
+	<tbody><tr>
+		<th>2019:</th>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			<a href="http://localhost:8080/historie/?zacatek=2019-03&amp;delka=P1M&amp;jidelna=99985">III</a>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+</tbody></table>                        </div>
+                    </div>
+				</div>
+            </main>
+<div class="modal fade plovouciOkno" id="snippet-receptura-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-receptura-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --><div class="modal fade plovouciOkno" id="snippet-alergeny-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-alergeny-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->			</div>
+		</div>
+		<div id="pripravenoProgramem" class="text-center">
+			<p>
+					Připraveno programem "Jídelna" verze 18.19.04.
+			</p>
+			<p>Veškeré publikované lístky a další informace jsou vlastnictvím příslušné jídelny nebo svých tvůrců.</p>
+		</div>
+		<p class="text-center"><a href="http://localhost:8080/zasady_ochrany_soukromi.pdf">Zásady ochrany osobních údajů</a></p>
+		<div id="footer">
+			<p>Objednávkový systém <a href="http://localhost:8080/">www.jidelna.cz</a> provozuje firma <a href="http://www.barda.cz/">Barda SW, HW, s.r.o.</a> ©2014</p>
+		</div>
+	</div>
+</div>	
+<div class="modal fade plovouciOkno" id="snippet-napoveda-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-napoveda-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->		<div class="modal fade plovouciOkno" data-iajs-zobrazit="1" data-iajs-zarizeni="582" id="snippet-plovouciOkno-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-plovouciOkno-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Zpráva pro strávníky od jídelny.
+</h4>
+      </div>
+      <div class="modal-body">
+			<p>Zprava</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+		<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/jquery-1.js"></script>
+		<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/bootstrap.js"></script>
+		<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/placeholders.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/respond.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/jquery.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/netteForms.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/hlavni.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20Odb%C4%9Bry_files/zpravaJidelny.js"></script>
+
+
+

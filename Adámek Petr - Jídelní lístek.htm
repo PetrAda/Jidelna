@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html class=" js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="description" content="Jídelní lístky škol a školek s možností odhlášky a výběru.">
+	<meta name="keywords" content="Lístek, Jídelna, Školní, Závodní, Jídelníček, Jídelní lístek, Základní škola, ZŠ, Mateřská škola, MŠ, Střední škola, SŠ, Přihláška, Odhláška, Objednávka, Strava, jidelna.cz">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Adámek Petr - Jídelní lístek</title>
+	<link rel="shortcut icon" href="http://localhost:8080/favicon.ico">
+		<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/bootstrap.css" rel="stylesheet">
+		<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/font-awesome.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/style-blue.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/width-boxed.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/cookie-control.css" rel="stylesheet">
+	<link href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/base.css" rel="stylesheet">
+	
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Při poskytování služeb nám pomáhají soubory cookie. Používáním našich služeb vyjadřujete souhlas s naším používáním souborů cookie.","dismiss":"OK, rozumím","learnMore":"Podrobnosti","link":null,"theme":"light-top"};
+    </script>
+
+    <script type="text/javascript" src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/cookieconsent.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+<link rel="stylesheet" type="text/css" href="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/light-top.xml"></head>
+
+<body data-basepath="" class="loggedIn">
+	<script> document.documentElement.className+=' js' </script>
+<div id="sb-site">
+	<div id="whole" class="boxed">
+		<div class="reklamyBox">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+				Placeholder reklamy
+			</div>
+			<script async="" src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/adsbygoogle.js"></script>
+			<!-- Pravy bocni panel -->
+			<script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="reklamyBoxLevy">
+			<div class="placeholderReklamy" style="width:160px;height:600px;">
+				Placeholder reklamy
+			</div>
+			<script async="" src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/adsbygoogle.js"></script>
+			<!-- Levy bocni panel -->
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div id="header" class="header-full container-fluid">
+            <div class="row">
+			<div class="col-xs-7">
+				<div class="row">
+					<div id="hlavniHeader" class="col-xs-7 header-full-title">
+						<h1><a href="http://localhost:8080/?jidelna=99985">Jídelní lístek</a> <span class="ajaxSpinner" style="display: none;"><i class="fa fa-gear fa-spin"></i></span></h1>
+					</div>
+					<div class="col-xs-5">
+						<p>Poslední synchronizace:
+                            <em>Čtvrtek&nbsp;7.3.2019&nbsp;23:15</em></p>
+						<p>Uzavírka objednávek: 
+							<em>7:00
+                                </em></p>
+					</div>
+				</div>
+				<div id="headerJidelny" class="row header-full-title">
+                    <p>Adámek Petr</p>
+				</div>
+			</div>
+			<div class="col-xs-5">
+<div id="snippet-login-">        <div id="prihlaseniBox" class="prihlasen well well-sm container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+                    <div class="nastrojeBox pull-right">
+                        <form action="/jidelni-listek/?jidelna=99985" method="post" id="frm-login-odhlasit" novalidate="">
+                            <input class="btn btn-link" name="_submit" value="Odhlásit se" type="submit">
+                        <input name="do" value="login-odhlasit-submit" type="hidden"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>
+                        <a href="http://localhost:8080/ucet/?jidelna=99985" class="btn btn-link"><strong>Správa účtu</strong></a>
+                    </div>
+						<dl class="">
+							<dt>Přihlášen:</dt>
+							<dd>Milasek Muj</dd>
+							<dt>Jídelna:</dt>
+							<dd>
+								Adámek Petr
+							</dd>
+						</dl>
+				</div>
+			</div>
+        </div>
+</div>			</div>
+            </div>
+		</div>
+		<div id="hlavniNavigace" class="navbar navbar-static-top navbar-default navbar-header-full navbar-dark">
+			<ul class="nav navbar-nav">
+				<li><a href="http://localhost:8080/?jidelna=99985">Vybrat jídelnu</a></li>
+				<li class="active"><a href="http://localhost:8080/jidelni-listek/?jidelna=99985">Jídelní lístek</a></li>
+				<li><a href="http://localhost:8080/historie/?jidelna=99985">Historie</a></li>
+				<li><a href="http://localhost:8080/kontakty/?jidelna=99985">Kontakty a informace</a></li>
+				<li><a href="http://localhost:8080/spotrebni-kos/?jidelna=99985">Spotřební koš</a></li>
+				<li><a href="http://localhost:8080/napoveda/?jidelna=99985">Nápověda</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="flashes" id="snippet--flashes">
+			</div>
+			<div class="page-body">
+            <main class="container-fluid">
+				<div class="row">
+<div class="jidelniListek">
+	<table class="table table-striped kontaKObjednani">
+		<tbody><tr>
+			<th>Jméno strávníka</th> 
+			<td class="stravnik">
+				Milasek Muj 			</td>
+		</tr>
+		<tr>
+			<th>Konto pro objednávání</th>
+			<td class="konto">
+				360,00&nbsp;Kč
+			</td>
+		</tr>
+	</tbody></table>
+	<div>
+<form action="/jidelni-listek/?jidelna=99985" method="post" id="frm-listek-objednavaciFormular" novalidate="">
+    <input name="_token_" value="1d1xgojii5w5jiBJRZs0KVQpUVCpTaWJnHUys=" type="hidden"> 
+            <div class="oddelovacTydnu">
+                Týden 11
+            </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Pondělí 11. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni" style="display: none;">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+                            <p data-tooltip="tooltip" title="" data-original-title="Odhláška provedená personálem jídelny, kterou nelze změnit">Generální odhláška</p>
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+                            <p data-tooltip="tooltip" title="" data-original-title="Odhláška provedená personálem jídelny, kterou nelze změnit">Generální odhláška</p>
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařil se získat odhad hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                Dortíček s knedlíčkem
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                mňamózní
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+                            <p data-tooltip="tooltip" title="" data-original-title="Odhláška provedená personálem jídelny, kterou nelze změnit">Generální odhláška</p>
+                        
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Úterý 12. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+                            <p data-tooltip="tooltip" title="" data-original-title="Odhláška provedená personálem jídelny, kterou nelze změnit">Generální odhláška</p>
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+                            <p data-tooltip="tooltip" title="" data-original-title="Odhláška provedená personálem jídelny, kterou nelze změnit">Generální odhláška</p>
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row odhlaseni">
+            <div class="menuJidla col-xs-offset-1 col-xs-9 popiska-vpravo">Odhlásit</div>
+                <div class="text-center col-xs-2">
+                    <label>
+                        <div class="volbaUzivatele">
+                                <input value="0" name="objednavky[20190312][201903123225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190312-201903123225-3457606-volbaJidla-0" type="radio">
+                        </div>
+                    </label>
+                </div>
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17035" name="objednavky[20190312][201903123225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190312-201903123225-3457606-volbaJidla-0-17035" type="radio">
+                        
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Středa 13. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row odhlaseni">
+            <div class="menuJidla col-xs-offset-1 col-xs-9 popiska-vpravo">Odhlásit</div>
+                <div class="text-center col-xs-2">
+                    <label>
+                        <div class="volbaUzivatele">
+                                <input value="0" name="objednavky[20190313][201903133224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190313-201903133224-3457606-volbaJidla-0" type="radio">
+                        </div>
+                    </label>
+                </div>
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařil se získat odhad hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Que?
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                passo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                ist
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                es
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                doung
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17033" name="objednavky[20190313][201903133224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190313-201903133224-3457606-volbaJidla-0-17033" type="radio">
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+                </label>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařil se získat odhad hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Que?
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                passo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                ist
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                es
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                doung
+
+            </div>
+        </div>
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17034" name="objednavky[20190313][201903133224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190313-201903133224-3457606-volbaJidla-0-17033-17034" type="radio">
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row odhlaseni">
+            <div class="menuJidla col-xs-offset-1 col-xs-9 popiska-vpravo">Odhlásit</div>
+                <div class="text-center col-xs-2">
+                    <label>
+                        <div class="volbaUzivatele">
+                                <input value="0" name="objednavky[20190313][201903133225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190313-201903133225-3457606-volbaJidla-0" type="radio">
+                        </div>
+                    </label>
+                </div>
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařil se získat odhad hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                es
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                doung
+
+            </div>
+        </div>
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17035" name="objednavky[20190313][201903133225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190313-201903133225-3457606-volbaJidla-0-17035" type="radio">
+                        
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Čtvrtek 14. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row odhlaseni">
+            <div class="menuJidla col-xs-offset-1 col-xs-9 popiska-vpravo">Odhlásit</div>
+                <div class="text-center col-xs-2">
+                    <label>
+                        <div class="volbaUzivatele">
+                                <input value="0" name="objednavky[20190314][201903143224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190314-201903143224-3457606-volbaJidla-0" type="radio">
+                        </div>
+                    </label>
+                </div>
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17033" name="objednavky[20190314][201903143224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190314-201903143224-3457606-volbaJidla-0-17033" type="radio">
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+                </label>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17034" name="objednavky[20190314][201903143224][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190314-201903143224-3457606-volbaJidla-0-17033-17034" type="radio">
+                                                <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row odhlaseni">
+            <div class="menuJidla col-xs-offset-1 col-xs-9 popiska-vpravo">Odhlásit</div>
+                <div class="text-center col-xs-2">
+                    <label>
+                        <div class="volbaUzivatele">
+                                <input value="0" name="objednavky[20190314][201903143225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190314-201903143225-3457606-volbaJidla-0" type="radio">
+                        </div>
+                    </label>
+                </div>
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                <label>
+                    <div class="volbaUzivatele">
+                            <input value="17035" name="objednavky[20190314][201903143225][3457606][volbaJidla]" id="frm-listek-objednavaciFormular-objednavky-20190314-201903143225-3457606-volbaJidla-0-17035" type="radio">
+                        
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="den container-fluid">
+        <div class="hlavicka row">
+            <div class="menuHlavicka col-xs-1">Menu</div>
+            <div class="chodHlavicka col-xs-1">Chod</div>
+            <div class="datum col-xs-8">Pátek 15. 3. 2019</div>
+            <div class="stravnik text-center col-xs-2">
+                    <a href="http://localhost:8080/ucet/?jidelna=99985">
+                        Milasek Muj
+                    </a>
+            </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Oběd
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                            <p data-tooltip="tooltip" title="" data-original-title="Vaše jídelna nepovolila tuto volbu">Objednání zakázáno</p>
+                        <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                2
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                             <img src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/B_smile.png" alt="Prumer" class="PrumerneHodnoceni">
+                         <div class="SpecifikaHodnoceni">Průměr získán z váženého průměru z dat:<br>Polévka se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Jídlo se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Příloha se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Doplněk se sílou hodnocení 1 průměrem 0 z 0 hlasů<br>Nápoj se sílou hodnocení 1 průměrem 3 z 1 hlasů<br></div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Polévka
+            </div>
+            <div class="col-xs-7 textJidla">
+                Test Polevky
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Jídlo
+            </div>
+            <div class="col-xs-7 textJidla">
+                Hlavni Jidlo
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Příloha
+            </div>
+            <div class="col-xs-7 textJidla">
+                Příloha
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Doplněk
+            </div>
+            <div class="col-xs-7 textJidla">
+                doplněk
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 popiskaJidla">
+                Nápoj
+            </div>
+            <div class="col-xs-7 textJidla">
+                nápooooj
+
+            </div>
+        </div>
+    </div>
+            <div class="text-center col-xs-2">
+                    <div class="volbaUzivatele">
+ 
+                            <p data-tooltip="tooltip" title="" data-original-title="Vaše jídelna nepovolila tuto volbu">Objednání zakázáno</p>
+                        <div class="badge">10,00&nbsp;Kč</div>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+        <div class="castDne row">
+    <div class="col-xs-12">
+        <div class="hlavicka row">
+            Snidane
+        </div>
+        <div class="menu row"> 
+            <div class="nazevJidla col-xs-1">
+                1
+               
+                                
+
+               <div class="hodnoceni row">
+                     <div>
+                         <div class="SpecifikaHodnoceni">Nepodařil se získat odhad hodnocení tohoto dne</div>
+                     </div>
+                </div>
+            </div>
+
+    <div class="menuJidla col-xs-9">
+    </div>
+            <div data-tooltip="tooltip" title="" class="text-center col-xs-2 zvyrazneny" data-original-title="Toto jídlo bylo v době synchronizace dat s jídelnou PŘIHLÁŠENO">
+                    <div class="volbaUzivatele">
+ 
+                            <p data-tooltip="tooltip" title="" data-original-title="Vaše jídelna nepovolila tuto volbu">Objednání zakázáno</p>
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="text-right potvrzovaciTlacitka">
+        <input name="_submit" value="Pokračovat v objednávce - zobrazit změny" class="submitButton btn btn-primary" type="submit"><input name="_reset" value="Zrušit změny" class="submitButton btn btn-default" type="reset">
+    </div>
+<input name="do" value="listek-objednavaciFormular-submit" type="hidden"><!--[if IE]><input type=IEbug disabled style="display:none"><![endif]-->
+</form>	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+			</div>
+		</div>
+	</div>
+</div>                </div>
+				<div class="row">
+					<div class="reklamyBanner">
+						<div class="placeholderReklamy" style="width:970px;height:90px;">
+							Placeholder reklamy
+						</div>
+						<script async="" src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/adsbygoogle.js"></script>
+						<!-- Pod strankou -->
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-xs-12">
+                        <h3>Přehled zveřejněných jídelníčků:</h3>
+                        <div class="centeredContent">
+<table class="vyberMesice table table-striped table-condensed">
+	<tbody><tr>
+		<th>2019:</th>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+			<a href="http://localhost:8080/jidelni-listek/?zacatek=2019-03&amp;delka=P1M&amp;jidelna=99985">III</a>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+</tbody></table>                        </div>
+                    </div>
+				</div>
+            </main>
+<div class="modal fade plovouciOkno" id="snippet-receptura-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-receptura-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --><div class="modal fade plovouciOkno" id="snippet-alergeny-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-alergeny-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->			</div>
+		</div>
+		<div id="pripravenoProgramem" class="text-center">
+			<p>
+					Připraveno programem "Jídelna" verze 18.19.04.
+			</p>
+			<p>Veškeré publikované lístky a další informace jsou vlastnictvím příslušné jídelny nebo svých tvůrců.</p>
+		</div>
+		<p class="text-center"><a href="http://localhost:8080/zasady_ochrany_soukromi.pdf">Zásady ochrany osobních údajů</a></p>
+		<div id="footer">
+			<p>Objednávkový systém <a href="http://localhost:8080/">www.jidelna.cz</a> provozuje firma <a href="http://www.barda.cz/">Barda SW, HW, s.r.o.</a> ©2014</p>
+		</div>
+	</div>
+</div>	
+<div class="modal fade plovouciOkno" id="snippet-napoveda-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-napoveda-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+			<p>Zde není nic k vidění.</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->		<div class="modal fade plovouciOkno" data-iajs-zobrazit="1" data-iajs-zarizeni="582" id="snippet-plovouciOkno-">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-toggle="modal" data-target="#snippet-plovouciOkno-"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Zpráva pro strávníky od jídelny.
+</h4>
+      </div>
+      <div class="modal-body">
+			<p>Zprava</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal --> 
+		<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/jquery-1.js"></script>
+		<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/bootstrap.js"></script>
+		<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/placeholders.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/respond.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/jquery.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/netteForms.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/hlavni.js"></script>
+	<script src="Ad%C3%A1mek%20Petr%20-%20J%C3%ADdeln%C3%AD%20l%C3%ADstek_files/zpravaJidelny.js"></script>
